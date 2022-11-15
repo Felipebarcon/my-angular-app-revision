@@ -1,0 +1,30 @@
+.nav {
+  background-color: #15133c;
+  color: white;
+}
+
+.nav--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--list-ul {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav--list-ul:last-child {
+  margin-right: 2rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.nav--list-li:hover {
+  color: coral;
+  transition: 0.5s;
+}
+
+.nav--logo {
+  width: 10rem;
+}
