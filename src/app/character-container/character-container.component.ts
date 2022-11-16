@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-container.component.css'],
 })
 export class CharacterContainerComponent implements OnInit {
-  public characters: string[];
-
   constructor() {}
 
   ngOnInit(): void {}
