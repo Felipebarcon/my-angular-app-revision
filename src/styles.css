@@ -18,8 +18,29 @@ a {
   color: inherit;
 }
 
+body {
+  background: #f2f4f4;
+}
+
 html {
   font-size: 62.5%;
+}
+
+/* DISPLAY */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 120rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 1.4rem;
+  background-color: seagreen;
+  cursor: pointer;
 }
 
 /* UTILITY */
@@ -52,6 +73,20 @@ html {
   margin-bottom: 2rem;
 }
 
+.ml-10 {
+  margin-left: 1rem;
+}
+
 .text-justify {
   text-align: justify;
+}
+
+/* DEBUG */
+
+.d1 {
+  border: solid red 1px;
+}
+
+.d2 {
+  border: solid blue 1px;
 }
