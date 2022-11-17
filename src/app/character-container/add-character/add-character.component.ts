@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-character',
@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddCharacterComponent implements OnInit {
   input: string = '';
-  characters: string[] = [];
+  @Output() newItemEvent = new EventEmitter<string>();
 
   constructor() {}
 
   addInput(input: string) {
-    this.characters.push(input);
+    this.newItemEvent.emit(input);
     this.input = '';
-    console.log(this.characters);
+    console.log(this.newItemEvent);
   }
 
   ngOnInit(): void {}

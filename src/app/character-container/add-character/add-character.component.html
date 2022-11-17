@@ -2,13 +2,13 @@
   <div class="add content">
     <h2 class="mb-20">Add a Character</h2>
     <input
-      [(ngModel)]="input"
+      #input
       class="add--input"
       placeholder="Write the name of a LOTR character"
       type="text"
     >
     <button
-      (click)="addInput(input)"
+      (click)="addInput(input.value)"
       class="btn ml-10"
     >Add
     </button>
